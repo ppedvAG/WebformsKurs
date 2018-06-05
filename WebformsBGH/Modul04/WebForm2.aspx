@@ -13,6 +13,8 @@
     <form id="form1" runat="server">
         <div><asp:button runat="server" text="Button" OnClick="Unnamed_Click" />
         </div>
+        <%=Server.HtmlEncode("Hannes&Preishuber-Pfügl") %>
+
     </form>
 </body>
 </html>
