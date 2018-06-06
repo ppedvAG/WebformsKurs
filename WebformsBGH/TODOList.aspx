@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Modul07/Site1.Master" AutoEventWireup="true" CodeBehind="TODOList.aspx.cs" Inherits="WebformsBGH.TODOList" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0/css/tempusdominus-bootstrap-4.min.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -29,7 +31,7 @@
 
 
 
-    <asp:FormView ID="FormView1" runat="server" DataKeyNames="Id" 
+    <asp:FormView ID="FormView1" runat="server" DataKeyNames="Id"
         DefaultMode="Insert"
         DataSourceID="SqlDataSource1">
         <EditItemTemplate>
@@ -53,26 +55,42 @@
         </EditItemTemplate>
         <InsertItemTemplate>
             Aufgabe:
-            <asp:TextBox ID="AufgabeTextBox" runat="server" 
-                cssclass="form-control"
+            <asp:TextBox ID="AufgabeTextBox" runat="server"
+                CssClass="form-control"
                 Text='<%# Bind("Aufgabe") %>' />
             <br />
             Datum:
-            <asp:TextBox ID="DatumTextBox" runat="server"
-                cssclass="form-control"
-                Text='<%# Bind("Datum") %>' />
-            <br />
-                Bearbeiter:
            
-            <asp:DropDownList cssclass="form-control" ID="DropDownList1"
+             
+
+            <div class="form-group">
+                <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+
+                    <asp:TextBox ID="DatumTextBox" runat="server"
+                        CssClass="form-control datetimepicker-input" data-target="#datetimepicker1"
+                        Text='<%# Bind("Datum") %>' />
+
+                    <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br />
+            Bearbeiter:
+           
+            <asp:DropDownList CssClass="form-control" ID="DropDownList1"
                 DataSourceID="SqlDataSourcePersonen"
-                    runat="server" 
-                DataTextField="FullName" DataValueField="Bearbeiter" 
-                SelectedValue='<%# Bind("Bearbeiter") %>'></asp:DropDownList>
+                runat="server"
+                DataTextField="FullName" DataValueField="Bearbeiter"
+                SelectedValue='<%# Bind("Bearbeiter") %>'>
+            </asp:DropDownList>
             <br />
             <asp:LinkButton ID="InsertButton" runat="server" CssClass="btn btn-outline-primary"
                 CausesValidation="True" CommandName="Insert" Text="Einfügen" />
-            &nbsp;<asp:LinkButton ID="InsertCancelButton" 
+            &nbsp;<asp:LinkButton ID="InsertCancelButton"
                 CssClass="btn btn-outline-secondary"
                 runat="server" CausesValidation="False" CommandName="Cancel" Text="Abbrechen" />
         </InsertItemTemplate>
@@ -98,22 +116,31 @@
         </ItemTemplate>
     </asp:FormView>
     <ul class="list-group">
-         <asp:Repeater ID="Repeater1" runat="server"
+        <asp:Repeater ID="Repeater1" runat="server"
             DataSourceID="SqlDataSource1">
             <ItemTemplate>
-                <li class="list-group-item"><%#Eval("Bearbeiter") %>: <%#Eval("Aufgabe") %> </li>
+                <li class="list-group-item"><%#Eval("Bearbeiter") %>: 
+                    <%#Eval("Aufgabe") %> </li>
             </ItemTemplate>
         </asp:Repeater>
 
     </ul>
-        <asp:SqlDataSource ID="SqlDataSourcePersonen" runat="server"
-            ConnectionString="<%$ ConnectionStrings:WebformsDBConnectionString1 %>" 
-            SelectCommand="SELECT * FROM [Personen] ORDER BY [FullName]">
+    <asp:SqlDataSource ID="SqlDataSourcePersonen" runat="server"
+        ConnectionString="<%$ ConnectionStrings:WebformsDBConnectionString1 %>"
+        SelectCommand="SELECT * FROM [Personen] ORDER BY [FullName]"
+        CacheDuration="60" EnableCaching="true"></asp:SqlDataSource>
 
-        </asp:SqlDataSource>
-   
 
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">
+    <script src="Scripts/moment-with-locales.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker1').datetimepicker({ locale: 'de' });
+        });
+    </script>
+
 </asp:Content>
