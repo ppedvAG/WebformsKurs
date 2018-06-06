@@ -153,7 +153,13 @@
     <Content Include="Modul02\WebForm2.aspx" />
     <Content Include="Modul02\WebForm3.aspx" />
     <Content Include="modul03\WebForm1.aspx" />
+    <Content Include="modul04\default.aspx" />
+    <Content Include="Modul05\details.aspx" />
+    <Content Include="Modul05\liste.aspx" />
     <Content Include="Modul05\neueseite.aspx" />
+    <Content Include="Modul05\orte.aspx" />
+    <Content Include="Modul05\UserCounter.aspx" />
+    <Content Include="Modul05\variablen.aspx" />
     <Content Include="Modul05\WebForm1.aspx" />
     <Content Include="Modul05\WebForm2.aspx" />
     <Content Include="Modul05\WebForm3.aspx" />
@@ -281,12 +287,56 @@
     <Compile Include="modul03\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="modul04\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modul04\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul05\Class1.cs" />
+    <Compile Include="Modul05\details.aspx.cs">
+      <DependentUpon>details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul05\details.aspx.designer.cs">
+      <DependentUpon>details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul05\liste.aspx.cs">
+      <DependentUpon>liste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul05\liste.aspx.designer.cs">
+      <DependentUpon>liste.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Modul05\neueseite.aspx.cs">
       <DependentUpon>neueseite.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Modul05\neueseite.aspx.designer.cs">
       <DependentUpon>neueseite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul05\orte.aspx.cs">
+      <DependentUpon>orte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul05\orte.aspx.designer.cs">
+      <DependentUpon>orte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul05\PlzOrt.cs" />
+    <Compile Include="Modul05\UserCounter.aspx.cs">
+      <DependentUpon>UserCounter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul05\UserCounter.aspx.designer.cs">
+      <DependentUpon>UserCounter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul05\variablen.aspx.cs">
+      <DependentUpon>variablen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul05\variablen.aspx.designer.cs">
+      <DependentUpon>variablen.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modul05\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -333,7 +383,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="modul04\" />
+    <Folder Include="App_Code\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
