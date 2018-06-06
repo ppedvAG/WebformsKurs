@@ -21,10 +21,11 @@ namespace WebformsBGH.modul04
                 var id = Guid.NewGuid().ToString();
 
                 FileUpload1.PostedFile.SaveAs(
-                    Server.MapPath("~/app_data/upload/" +
+                    Server.MapPath("~/upload/" +
                      id+ ".png"));
                 Label1.Text = "die Datei " + FileUpload1.PostedFile.FileName
                     + "wurde unter" + id + " gespeichert";
+                Image1.ImageUrl = "/upload/" + id + ".png";
             }
         }
     }

@@ -16,6 +16,7 @@
                 OnClick="Button1_Click" />
             
             <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <asp:Image ID="Image1" runat="server" />
         </div>
     </form>
 </body>
