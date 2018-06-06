@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebformsBGH.Modul07.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <title>das ist ppedv</title>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <h1>HMTL</h1>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <asp:ContentPlaceHolder ID="Scripts" runat="server">
+        <script>alert("hallo");</script>
+    </asp:ContentPlaceHolder>
+</body>
+</html>
