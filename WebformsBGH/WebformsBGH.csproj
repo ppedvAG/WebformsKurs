@@ -154,6 +154,7 @@
     <Content Include="Modul02\WebForm3.aspx" />
     <Content Include="modul03\WebForm1.aspx" />
     <Content Include="modul04\default.aspx" />
+    <Content Include="modul04\todo.aspx" />
     <Content Include="Modul05\details.aspx" />
     <Content Include="Modul05\liste.aspx" />
     <Content Include="Modul05\neueseite.aspx" />
@@ -293,6 +294,13 @@
     </Compile>
     <Compile Include="modul04\default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="modul04\todo.aspx.cs">
+      <DependentUpon>todo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modul04\todo.aspx.designer.cs">
+      <DependentUpon>todo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modul05\Class1.cs" />
     <Compile Include="Modul05\details.aspx.cs">
