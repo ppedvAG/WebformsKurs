@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
 </head>
 <body>
@@ -14,10 +14,14 @@
             <asp:TextBox ID="task" runat="server">
             </asp:TextBox>
             <asp:Button ID="Button1" runat="server" Text="Button"
-                OnClick="Button1_Click"
-                />
+                OnClick="Button1_Click" />
             <hr />
-
+            <ul>
+                <%foreach (var item in ToDoItems)
+                    {%>
+                <li><%=item %></li>
+                <%} %>
+            </ul>
 
         </div>
     </form>
