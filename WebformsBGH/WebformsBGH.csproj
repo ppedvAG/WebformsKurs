@@ -154,6 +154,7 @@
     <Content Include="Modul02\WebForm3.aspx" />
     <Content Include="modul03\WebForm1.aspx" />
     <Content Include="modul04\default.aspx" />
+    <Content Include="modul04\fileUpload.aspx" />
     <Content Include="modul04\todo.aspx" />
     <Content Include="Modul05\details.aspx" />
     <Content Include="Modul05\liste.aspx" />
@@ -295,6 +296,13 @@
     <Compile Include="modul04\default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="modul04\fileUpload.aspx.cs">
+      <DependentUpon>fileUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modul04\fileUpload.aspx.designer.cs">
+      <DependentUpon>fileUpload.aspx</DependentUpon>
+    </Compile>
     <Compile Include="modul04\todo.aspx.cs">
       <DependentUpon>todo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -392,6 +400,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Code\" />
+    <Folder Include="App_Data\upload\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
