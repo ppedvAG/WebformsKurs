@@ -17,18 +17,19 @@ namespace WebformsBGH
             // Code, der beim Anwendungsstart ausgeführt wird
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-        }
-        void Application_End(object sender, EventArgs e)
-        {
             Application.Add("anzahl", 0);
-            
-           
+
+
             var liste = new List<PlzOrt>();
             liste.Add(new PlzOrt() { Plz = 1234, Ort = "demorot" });
             liste.Add(new PlzOrt() { Plz = 3433, Ort = "Burghausne" });
             liste.Add(new PlzOrt() { Plz = 2323, Ort = "Braunau" });
             liste.Add(new PlzOrt() { Plz = 7734, Ort = "Graz" });
             Application.Add("plzort", liste);
+        }
+        void Application_End(object sender, EventArgs e)
+        {
+            
 
 
 
