@@ -63,9 +63,12 @@
                 Text='<%# Bind("Datum") %>' />
             <br />
                 Bearbeiter:
-            <asp:TextBox ID="BearbeiterTextBox" runat="server"
-                cssclass="form-control"
-                Text='<%# Bind("Bearbeiter") %>' />
+           
+            <asp:DropDownList cssclass="form-control" ID="DropDownList1"
+                DataSourceID="SqlDataSourcePersonen"
+                    runat="server" 
+                DataTextField="FullName" DataValueField="Bearbeiter" 
+                SelectedValue='<%# Bind("Bearbeiter") %>'></asp:DropDownList>
             <br />
             <asp:LinkButton ID="InsertButton" runat="server" CssClass="btn btn-outline-primary"
                 CausesValidation="True" CommandName="Insert" Text="Einfügen" />
@@ -95,15 +98,20 @@
         </ItemTemplate>
     </asp:FormView>
     <ul class="list-group">
-        <asp:Repeater ID="Repeater1" runat="server"
+         <asp:Repeater ID="Repeater1" runat="server"
             DataSourceID="SqlDataSource1">
             <ItemTemplate>
-                <li class="list-group-item"><%#Eval("Aufgabe") %></li>
+                <li class="list-group-item"><%#Eval("Bearbeiter") %>: <%#Eval("Aufgabe") %> </li>
             </ItemTemplate>
         </asp:Repeater>
 
     </ul>
+        <asp:SqlDataSource ID="SqlDataSourcePersonen" runat="server"
+            ConnectionString="<%$ ConnectionStrings:WebformsDBConnectionString1 %>" 
+            SelectCommand="SELECT * FROM [Personen] ORDER BY [FullName]">
 
+        </asp:SqlDataSource>
+   
 
 
 </asp:Content>
