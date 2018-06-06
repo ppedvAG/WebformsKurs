@@ -103,8 +103,8 @@
                         aria-describedby="btnGroupAddon">
                     <div class="input-group-append ">
                         <div class="input-group-text" id="btnGroupAddon">
-                            <i class="fa fa-search" style="color:blue"></i>
-                        
+                            <i class="fa fa-search" style="color: blue"></i>
+
                         </div>
                     </div>
                 </div>

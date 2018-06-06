@@ -5,21 +5,48 @@
 <html>
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/font-awesome.css" rel="stylesheet" />
+    <link href="../Content/Site.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
         <title>das ist ppedv</title>
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Modul07/webform1">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Modul07/webform2">Seite 2</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <div class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                <h1>HMTL</h1>
             </asp:ContentPlaceHolder>
         </div>
     </form>
+    <script src="../Scripts/jquery-3.3.1.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
     <asp:ContentPlaceHolder ID="Scripts" runat="server">
-        <script>alert("hallo");</script>
     </asp:ContentPlaceHolder>
 </body>
 </html>
