@@ -178,6 +178,7 @@
     <Content Include="Modul07\WebForm2.aspx" />
     <Content Include="Modul07\WebForm3.aspx" />
     <Content Include="Modul07\WebForm4.aspx" />
+    <Content Include="Modul07\WebForm5.aspx" />
     <Content Include="Modul07\WebUserControl1.ascx" />
     <Content Include="Modul08\sqlTableScripts.txt" />
     <Content Include="Modul08\WebForm1.aspx" />
@@ -446,6 +447,13 @@
     </Compile>
     <Compile Include="Modul07\WebForm4.aspx.designer.cs">
       <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul07\WebForm5.aspx.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul07\WebForm5.aspx.designer.cs">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modul07\WebUserControl1.ascx.cs">
       <DependentUpon>WebUserControl1.ascx</DependentUpon>
