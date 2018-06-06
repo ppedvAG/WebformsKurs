@@ -1,0 +1,16 @@
+﻿CREATE TABLE ToDo
+(
+	[Id] INT NOT NULL PRIMARY KEY identity, 
+    [Aufgabe] VARCHAR(50) NULL, 
+    [Datum] DATETIME NULL, 
+    [Erledigt] BIT NULL, 
+    [Bearbeiter] VARCHAR(5) NULL
+
+)
+CREATE TABLE Personen
+(
+	[Id] INT NOT NULL PRIMARY KEY Identity, 
+    [Bearbeiter] VARCHAR(5) NULL, 
+    [FullName] VARCHAR(50) NULL, 
+    [Ort] VARCHAR(50) NULL
+)
