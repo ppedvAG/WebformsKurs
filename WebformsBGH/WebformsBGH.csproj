@@ -180,6 +180,7 @@
     <Content Include="Modul07\WebForm4.aspx" />
     <Content Include="Modul07\WebForm5.aspx" />
     <Content Include="Modul07\WebUserControl1.ascx" />
+    <Content Include="Modul08\RepaterBootstrap.aspx" />
     <Content Include="Modul08\sqlTableScripts.txt" />
     <Content Include="Modul08\WebForm1.aspx" />
     <Content Include="Modul08\WebForm2.aspx" />
@@ -461,6 +462,13 @@
     </Compile>
     <Compile Include="Modul07\WebUserControl1.ascx.designer.cs">
       <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul08\RepaterBootstrap.aspx.cs">
+      <DependentUpon>RepaterBootstrap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul08\RepaterBootstrap.aspx.designer.cs">
+      <DependentUpon>RepaterBootstrap.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modul08\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
