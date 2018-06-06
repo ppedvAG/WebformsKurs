@@ -13,5 +13,11 @@ namespace WebformsBGH.modul04
         {
 
         }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Label1.Text = "Sie haben gewählt: " + DropDownList1.SelectedItem +
+                "mit de ID:" + DropDownList1.SelectedValue;
+        }
     }
 }
