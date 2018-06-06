@@ -1,6 +1,8 @@
 ﻿
 
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="WebformsBGH.Modul04.WebForm2" %>
+<%@ Page Language="C#"
+      
+    AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="WebformsBGH.Modul04.WebForm2" %>
 
 <!DOCTYPE html>
 

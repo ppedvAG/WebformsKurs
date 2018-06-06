@@ -153,10 +153,10 @@
     <Content Include="Modul02\WebForm2.aspx" />
     <Content Include="Modul02\WebForm3.aspx" />
     <Content Include="modul03\WebForm1.aspx" />
-    <Content Include="Modul04\neueseite.aspx" />
-    <Content Include="Modul04\WebForm1.aspx" />
-    <Content Include="Modul04\WebForm2.aspx" />
-    <Content Include="Modul04\WebForm3.aspx" />
+    <Content Include="Modul05\neueseite.aspx" />
+    <Content Include="Modul05\WebForm1.aspx" />
+    <Content Include="Modul05\WebForm2.aspx" />
+    <Content Include="Modul05\WebForm3.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -281,32 +281,32 @@
     <Compile Include="modul03\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Modul04\neueseite.aspx.cs">
+    <Compile Include="Modul05\neueseite.aspx.cs">
       <DependentUpon>neueseite.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Modul04\neueseite.aspx.designer.cs">
+    <Compile Include="Modul05\neueseite.aspx.designer.cs">
       <DependentUpon>neueseite.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Modul04\WebForm1.aspx.cs">
+    <Compile Include="Modul05\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Modul04\WebForm1.aspx.designer.cs">
+    <Compile Include="Modul05\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Modul04\WebForm2.aspx.cs">
+    <Compile Include="Modul05\WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Modul04\WebForm2.aspx.designer.cs">
+    <Compile Include="Modul05\WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Modul04\WebForm3.aspx.cs">
+    <Compile Include="Modul05\WebForm3.aspx.cs">
       <DependentUpon>WebForm3.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Modul04\WebForm3.aspx.designer.cs">
+    <Compile Include="Modul05\WebForm3.aspx.designer.cs">
       <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -332,7 +332,9 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="modul04\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />

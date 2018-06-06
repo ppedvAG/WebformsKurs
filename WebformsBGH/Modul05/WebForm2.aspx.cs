@@ -26,7 +26,7 @@ namespace WebformsBGH.Modul04
                 sw.WriteLine(DateTime.Now);
             }
             File.WriteAllText(Server.MapPath("/app_data/log.txt"), DateTime.Now.ToString());
-
+            
         }
     }
 }
