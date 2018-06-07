@@ -29,6 +29,7 @@
                 runat="server" ErrorMessage="keine email Adresse">*</asp:RegularExpressionValidator>
             <asp:Button ID="Button1" runat="server" Text="Button"
                 OnClick="Button1_Click"/>
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
         </div>
     </form>
     <script src="../Scripts/jquery-3.3.1.js"></script>
