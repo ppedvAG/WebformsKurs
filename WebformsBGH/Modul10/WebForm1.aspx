@@ -17,7 +17,6 @@
                 ControlToValidate="TextBox1" MinimumValue="00000" MaximumValue="99999"
                 ErrorMessage="Plz von 00000-99999">*</asp:RangeValidator>
             <br />
-            
             <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox><br />
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" 
                 ControlToValidate="TextBox2"
@@ -30,6 +29,7 @@
             <asp:Button ID="Button1" runat="server" Text="Button"
                 OnClick="Button1_Click"/>
             <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+
         </div>
     </form>
     <script src="../Scripts/jquery-3.3.1.js"></script>
