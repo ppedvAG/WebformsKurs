@@ -20,6 +20,7 @@ namespace WebformsBGH.Modul09
 
         [StringLength(5)]
         public string Bearbeiter { get; set; }
-     //   public virtual Personen Personen { get; set; }
+       // [InverseProperty("Bearbeiter")]
+       //public virtual Personen Personen { get; set; }
     }
 }
