@@ -150,6 +150,15 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\images\ui-icons_444444_256x240.png" />
+    <Content Include="Content\images\ui-icons_555555_256x240.png" />
+    <Content Include="Content\images\ui-icons_777620_256x240.png" />
+    <Content Include="Content\images\ui-icons_777777_256x240.png" />
+    <Content Include="Content\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Content\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\jquery-ui.structure.css" />
+    <Content Include="Content\jquery-ui.theme.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
@@ -180,6 +189,7 @@
     <Content Include="Modul07\WebForm4.aspx" />
     <Content Include="Modul07\WebForm5.aspx" />
     <Content Include="Modul07\WebUserControl1.ascx" />
+    <Content Include="Modul08\details.aspx" />
     <Content Include="Modul08\RepaterBootstrap.aspx" />
     <Content Include="Modul08\sqlTableScripts.txt" />
     <Content Include="Modul08\WebForm1.aspx" />
@@ -220,6 +230,7 @@
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\moment-with-locales.js" />
     <Content Include="Scripts\popper-utils.js" />
@@ -464,6 +475,13 @@
     </Compile>
     <Compile Include="Modul07\WebUserControl1.ascx.designer.cs">
       <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul08\details.aspx.cs">
+      <DependentUpon>details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul08\details.aspx.designer.cs">
+      <DependentUpon>details.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modul08\RepaterBootstrap.aspx.cs">
       <DependentUpon>RepaterBootstrap.aspx</DependentUpon>
