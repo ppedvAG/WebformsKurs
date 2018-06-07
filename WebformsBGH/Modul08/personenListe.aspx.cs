@@ -28,7 +28,15 @@ namespace WebformsBGH.Modul08
 
         protected void drpPersonen_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            var con = new SqlConnection(
+               ConfigurationManager.ConnectionStrings["WebformsDBConnectionString1"].ConnectionString);
+            var cmd = new SqlCommand("select * from Todo where bearbeiter=@par", con);
+            cmd.Parameters.AddWithValue("par", drpPersonen.SelectedValue);
+            var da = new SqlDataAdapter(cmd); //old style Datareader
+            var dt = new DataTable();
+            da.Fill(dt);
+            rptToDo.DataSource = dt;
+            rptToDo.DataBind();
         }
     }
 }
