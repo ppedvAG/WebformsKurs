@@ -15,21 +15,7 @@ namespace WebformsBGH.Modul08
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(
-              ConfigurationManager.ConnectionStrings["WebformsDBConnectionString1"].ConnectionString))
-            {
-              
-                var cmd = new SqlCommand("select * from Todo where Id=@Par", con);
-                cmd.Parameters.AddWithValue("@Par", 
-                    Request.GetFriendlyUrlSegments()[0] );
-                var da = new SqlDataAdapter(cmd);
-                var dt = new DataTable();
-                con.Open();
-                da.Fill(dt);
-
-                rptToDo.DataSource = dt;
-            }
-            rptToDo.DataBind();
+            
         }
     }
 }

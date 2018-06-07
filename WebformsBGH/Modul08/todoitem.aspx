@@ -7,11 +7,11 @@
         <div class="col">
             <h1>Todo Items Edit </h1>
 
-            <asp:FormView ID="FormView1" runat="server">
+            <asp:FormView ID="FormView1" runat="server"  >
                 <EditItemTemplate>
                     Erledigt 
                     <asp:CheckBox ID="CheckBox1" runat="server"
-                        Checked='<%#Bind("Erledigt") %>' /><br />
+                        Checked='<%#Eval("Erledigt") %>' /><br />
                     Aufgabe <%#Eval("Aufgabe") %><br />
                     <asp:Button ID="Button1"
                         CssClass="btn btn-danger"

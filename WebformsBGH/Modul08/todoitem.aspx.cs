@@ -14,7 +14,7 @@ namespace WebformsBGH.Modul08
     public partial class todoitem : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
+        {   FormView1.DefaultMode = FormViewMode.Edit;
             using (SqlConnection con = new SqlConnection(
             ConfigurationManager.ConnectionStrings["WebformsDBConnectionString1"].ConnectionString))
             {
@@ -30,6 +30,7 @@ namespace WebformsBGH.Modul08
                 FormView1.DataSource = dt;
             }
             FormView1.DataBind();
+         
         }
     }
 }
