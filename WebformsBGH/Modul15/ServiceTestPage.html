@@ -18,10 +18,11 @@
             $.ajax(
                 {
                     type: "POST",
-                    url: "webservice1.asmx/zeit",
-                    data: '{ort:$('#text1')}',
+                    url: "webservice1.asmx/Zeit",
+                    contentType: "application/json;charset=utf-8",
+                    data: "{ort:'"+$('#text1').val()+"'}",
                     success: function (result) {
-                        $('#label1').text(result);
+                        $('#label1').text(result.d);
                     }
                 }
             );

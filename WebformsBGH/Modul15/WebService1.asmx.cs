@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Script.Services;
 using System.Web.Services;
 
 namespace WebformsBGH.Modul15
@@ -10,6 +11,7 @@ namespace WebformsBGH.Modul15
     /// Zusammenfassungsbeschreibung für WebService1
     /// </summary>
     [WebService(Namespace = "http://tempuri.org/")]
+    [ScriptService]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     // Wenn der Aufruf dieses Webdiensts aus einem Skript zulässig sein soll, heben Sie mithilfe von ASP.NET AJAX die Kommentarmarkierung für die folgende Zeile auf. 
