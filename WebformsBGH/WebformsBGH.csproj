@@ -205,6 +205,7 @@
     <Content Include="Modul08\TODOListe.aspx" />
     <Content Include="Modul08\WebForm1.aspx" />
     <Content Include="Modul08\WebForm2.aspx" />
+    <Content Include="Modul09\Personen.aspx" />
     <Content Include="Modul09\ToDoModelBinding.aspx" />
     <Content Include="Modul09\WebForm1.aspx" />
     <Content Include="Modul09\WebForm2.aspx" />
@@ -547,6 +548,13 @@
     <Compile Include="Modul09\NWModel.cs" />
     <Compile Include="Modul09\Orders.cs" />
     <Compile Include="Modul09\Order_Details.cs" />
+    <Compile Include="Modul09\Personen.aspx.cs">
+      <DependentUpon>Personen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul09\Personen.aspx.designer.cs">
+      <DependentUpon>Personen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Modul09\Personen.cs" />
     <Compile Include="Modul09\Products.cs" />
     <Compile Include="Modul09\Region.cs" />
