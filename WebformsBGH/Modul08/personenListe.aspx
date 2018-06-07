@@ -6,7 +6,9 @@
     <div class="row">
         <div class="col">
             <h1>AUFGABE PRO PERSON</h1>
-            <asp:DropDownList ID="drpPersonen" runat="server" CssClass="form-control"
+            <asp:DropDownList ID="drpPersonen" 
+                AutoPostBack="true"
+                runat="server" CssClass="form-control"
                 DataTextField="FullName"
                 DataValueField="Bearbeiter"
                 OnSelectedIndexChanged="drpPersonen_SelectedIndexChanged">

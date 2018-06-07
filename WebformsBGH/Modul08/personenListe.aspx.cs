@@ -14,14 +14,19 @@ namespace WebformsBGH.Modul08
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var con = new SqlConnection(
-                ConfigurationManager.ConnectionStrings["WebformsDBConnectionString1"].ConnectionString);
-            var cmd = new SqlCommand("select * from personen",con);
-            var da = new SqlDataAdapter(cmd); //old style Datareader
-            var dt = new DataTable();
-            da.Fill(dt);
-            drpPersonen.DataSource = dt;
-            drpPersonen.DataBind();
+            if (!IsPostBack)
+            {
+                var con = new SqlConnection(
+                                ConfigurationManager.ConnectionStrings["WebformsDBConnectionString1"].ConnectionString);
+                var cmd = new SqlCommand("select * from personen", con);
+                var da = new SqlDataAdapter(cmd); //old style Datareader
+                var dt = new DataTable();
+                da.Fill(dt);
+                con.Close();
+                drpPersonen.DataSource = dt;
+                drpPersonen.DataBind();
+            }
+
 
 
         }
@@ -31,10 +36,11 @@ namespace WebformsBGH.Modul08
             var con = new SqlConnection(
                ConfigurationManager.ConnectionStrings["WebformsDBConnectionString1"].ConnectionString);
             var cmd = new SqlCommand("select * from Todo where bearbeiter=@par", con);
-            cmd.Parameters.AddWithValue("par", drpPersonen.SelectedValue);
+            cmd.Parameters.AddWithValue("@par", drpPersonen.SelectedValue);
             var da = new SqlDataAdapter(cmd); //old style Datareader
             var dt = new DataTable();
             da.Fill(dt);
+            con.Close();
             rptToDo.DataSource = dt;
             rptToDo.DataBind();
         }
