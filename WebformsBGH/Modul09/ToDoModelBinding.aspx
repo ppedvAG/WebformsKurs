@@ -14,13 +14,15 @@
             <asp:Repeater ID="rptToDo"
                 ItemType="WebformsBGH.Modul09.mbToDo"
                 SelectMethod="rptToDo_GetData"
-               
+                OnItemCommand="rptToDo_ItemCommand"
                 runat="server">
                 <ItemTemplate>
-                    <li><%#Item.Aufgabe %> <%#Item.Erledigt %></li>
+                    <li><%#Item.Aufgabe %> <%#Item.Erledigt %>
+                        <asp:Button ID="Button1" CssClass="btn btn-danger" 
+                            CommandName="DO" 
+                            runat="server" Text="x" /></li>
                 </ItemTemplate>
             </asp:Repeater>
-
         </ul>
         </div>
     </form>
