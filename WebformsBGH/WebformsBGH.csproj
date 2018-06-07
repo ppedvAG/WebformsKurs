@@ -50,6 +50,12 @@
     <Reference Include="AspNet.ScriptManager.bootstrap, Version=4.1.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AspNet.ScriptManager.bootstrap.4.1.1\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AI.DependencyCollector, Version=2.6.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.6.4\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
     </Reference>
@@ -87,6 +93,8 @@
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.5.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -530,6 +538,22 @@
     <Compile Include="Modul08\WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Modul09\Categories.cs" />
+    <Compile Include="Modul09\CustomerDemographics.cs" />
+    <Compile Include="Modul09\Customers.cs" />
+    <Compile Include="Modul09\DBModel.cs" />
+    <Compile Include="Modul09\Employees.cs" />
+    <Compile Include="Modul09\NWModel.cs" />
+    <Compile Include="Modul09\Orders.cs" />
+    <Compile Include="Modul09\Order_Details.cs" />
+    <Compile Include="Modul09\Personen.cs" />
+    <Compile Include="Modul09\Products.cs" />
+    <Compile Include="Modul09\Region.cs" />
+    <Compile Include="Modul09\Shippers.cs" />
+    <Compile Include="Modul09\Suppliers.cs" />
+    <Compile Include="Modul09\sysdiagrams.cs" />
+    <Compile Include="Modul09\Territories.cs" />
+    <Compile Include="Modul09\ToDo.cs" />
     <Compile Include="Modul09\ToDoModelBinding.aspx.cs">
       <DependentUpon>ToDoModelBinding.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
