@@ -193,6 +193,8 @@
     <Content Include="Modul08\personenListe.aspx" />
     <Content Include="Modul08\RepaterBootstrap.aspx" />
     <Content Include="Modul08\sqlTableScripts.txt" />
+    <Content Include="Modul08\todoitem.aspx" />
+    <Content Include="Modul08\TODOListe.aspx" />
     <Content Include="Modul08\WebForm1.aspx" />
     <Content Include="Modul08\WebForm2.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -497,6 +499,20 @@
     </Compile>
     <Compile Include="Modul08\RepaterBootstrap.aspx.designer.cs">
       <DependentUpon>RepaterBootstrap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul08\todoitem.aspx.cs">
+      <DependentUpon>todoitem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul08\todoitem.aspx.designer.cs">
+      <DependentUpon>todoitem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul08\TODOListe.aspx.cs">
+      <DependentUpon>TODOListe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul08\TODOListe.aspx.designer.cs">
+      <DependentUpon>TODOListe.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modul08\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

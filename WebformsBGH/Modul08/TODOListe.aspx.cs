@@ -7,21 +7,18 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Microsoft.AspNet.FriendlyUrls;
 
 namespace WebformsBGH.Modul08
 {
-    public partial class details : System.Web.UI.Page
+    public partial class TODOListe : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
             using (SqlConnection con = new SqlConnection(
-              ConfigurationManager.ConnectionStrings["WebformsDBConnectionString1"].ConnectionString))
+               ConfigurationManager.ConnectionStrings["WebformsDBConnectionString1"].ConnectionString))
             {
-              
-                var cmd = new SqlCommand("select * from Todo where Id=@Par", con);
-                cmd.Parameters.AddWithValue("@Par", 
-                    Request.GetFriendlyUrlSegments()[0] );
+                var cmd = new SqlCommand("select * from Todo ", con);
                 var da = new SqlDataAdapter(cmd);
                 var dt = new DataTable();
                 con.Open();
