@@ -13,7 +13,7 @@
             $.ajax(
                 {
                     type: "POST",
-                    url: "zeit.aspx",
+                    url: "zeit",
                     success: function (result) {
                         $('#label1').text(result);
                     }
