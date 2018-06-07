@@ -19,6 +19,6 @@ namespace WebformsBGH.Modul09
 
         [StringLength(50)]
         public string Ort { get; set; }
-        public virtual ICollection<ToDo> ToDo { get; set; }
+       // public virtual ICollection<ToDo> ToDo { get; set; }
     }
 }
