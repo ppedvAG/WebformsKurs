@@ -12,12 +12,12 @@
         <div>
               <ul>
             <asp:Repeater ID="rptToDo"
-                ItemType="mbToDo"
+                ItemType="WebformsBGH.Modul09.mbToDo"
                 SelectMethod="rptToDo_GetData"
                
                 runat="server">
                 <ItemTemplate>
-                    <li></li>
+                    <li><%#Item.Aufgabe %> <%#Item.Erledigt %></li>
                 </ItemTemplate>
             </asp:Repeater>
 

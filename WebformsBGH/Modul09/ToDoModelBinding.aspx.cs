@@ -25,7 +25,6 @@ namespace WebformsBGH.Modul09
                 var cmd = new SqlCommand("select * from Todo ", con);
                 con.Open();
                 var rd = cmd.ExecuteReader();
-
                 while (rd.Read())
                 {
                     liste.Add(new mbToDo()
