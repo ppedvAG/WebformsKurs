@@ -215,6 +215,7 @@
     <Content Include="Modul12\WebForm2.aspx" />
     <Content Include="Modul12\Zeit.aspx" />
     <Content Include="Modul15\ServiceTestPage.html" />
+    <Content Include="Modul15\WebForm1.aspx" />
     <Content Include="Modul15\WebService1.asmx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -627,6 +628,14 @@
     </Compile>
     <Compile Include="Modul12\Zeit.aspx.designer.cs">
       <DependentUpon>Zeit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul15\Class1.cs" />
+    <Compile Include="Modul15\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul15\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modul15\WebService1.asmx.cs">
       <DependentUpon>WebService1.asmx</DependentUpon>
