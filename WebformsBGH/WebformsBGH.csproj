@@ -199,6 +199,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
+    <Content Include="login.aspx" />
     <Content Include="Modul01\WebForm2.aspx" />
     <Content Include="Modul02\WebForm1.aspx" />
     <Content Include="Modul02\WebForm2.aspx" />
@@ -241,6 +242,7 @@
     <Content Include="Modul12\WebForm1.aspx" />
     <Content Include="Modul12\WebForm2.aspx" />
     <Content Include="Modul12\Zeit.aspx" />
+    <Content Include="Modul13\WebForm1.aspx" />
     <Content Include="Modul14\minify.aspx" />
     <Content Include="Modul14\WebForm1.aspx" />
     <Content Include="Modul14\WebForm2.aspx" />
@@ -324,7 +326,9 @@
     <Content Include="temp\WebForm2.aspx" />
     <Content Include="TODOList.aspx" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
@@ -349,6 +353,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modul01\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -664,6 +675,13 @@
     </Compile>
     <Compile Include="Modul12\Zeit.aspx.designer.cs">
       <DependentUpon>Zeit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul13\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul13\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modul14\minify.aspx.cs">
       <DependentUpon>minify.aspx</DependentUpon>
