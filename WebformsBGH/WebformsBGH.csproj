@@ -251,6 +251,12 @@
     <Content Include="Modul15\ServiceTestPage.html" />
     <Content Include="Modul15\WebForm1.aspx" />
     <Content Include="Modul15\WebService1.asmx" />
+    <Content Include="Modul16\Bilder.aspx" />
+    <Content Include="Modul16\bilder\IMG_4847.JPG" />
+    <Content Include="Modul16\bilder\IMG_4870.JPG" />
+    <Content Include="Modul16\bilder\IMG_4871.JPG" />
+    <Content Include="Modul16\bilder\IMG_4872.JPG" />
+    <Content Include="Modul16\bilder\IMG_4874.JPG" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -279,6 +285,7 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="Modul07\Site1.Master" />
+    <Content Include="Modul16\trhumbnail.ashx" />
     <None Include="Properties\PublishProfiles\WebformsBGHppedv - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Modul01\HtmlPage1.html" />
@@ -732,6 +739,16 @@
       <DependentUpon>WebService1.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Modul16\Bilder.aspx.cs">
+      <DependentUpon>Bilder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul16\Bilder.aspx.designer.cs">
+      <DependentUpon>Bilder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul16\trhumbnail.ashx.cs">
+      <DependentUpon>trhumbnail.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -780,6 +797,7 @@
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\upload\" />
     <Folder Include="Controllers\" />
+    <Folder Include="Modul\" />
     <Folder Include="pickup\" />
     <Folder Include="upload\" />
   </ItemGroup>
