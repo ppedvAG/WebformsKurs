@@ -7,18 +7,18 @@
 // </automatisch generiert>
 //------------------------------------------------------------------------------
 
-namespace WebformsBGH {
+namespace WebformsBGH.temp {
     
     
-    public partial class SiteMaster {
+    public partial class WebForm1 {
         
         /// <summary>
-        /// MainContent-Steuerelement
+        /// form1-Steuerelement
         /// </summary>
         /// <remarks>
         /// Automatisch generiertes Feld
         /// Zum Ändern Felddeklaration aus der Designerdatei in eine Code-Behind-Datei verschieben.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
     }
 }

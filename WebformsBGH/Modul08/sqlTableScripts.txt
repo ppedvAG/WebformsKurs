@@ -14,3 +14,27 @@ CREATE TABLE Personen
     [FullName] VARCHAR(50) NULL, 
     [Ort] VARCHAR(50) NULL
 )
+
+
+Version 1.1
+CREATE TABLE ToDo
+(
+	[Id] INT NOT NULL PRIMARY KEY identity, 
+    [Aufgabe] VARCHAR(50) NULL, 
+    [Datum] DATETIME NULL, 
+    [Erledigt] BIT NULL, 
+    [Bearbeiter] VARCHAR(5) NULL,
+  CONSTRAINT [FK_ToDo_Personen] FOREIGN KEY ([Bearbeiter]) REFERENCES [Personen] ([Bearbeiter])
+
+
+)
+CREATE TABLE Personen
+(
+	
+    [Bearbeiter] VARCHAR(5) NOT NULL PRIMARY KEY, 
+    [FullName] VARCHAR(50) NULL, 
+    [Ort] VARCHAR(50) NULL
+)
+
+
+	
