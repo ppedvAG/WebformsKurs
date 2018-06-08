@@ -14,28 +14,30 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">
     <script src="../Scripts/jquery-ui.js"></script>
     <script>
-        $("#TextBox1").autocomplete({
+        $("#<%=TextBox1.ClientID%>").autocomplete({
             source: function (request, response) {
-                var param = { Par: $('#TextBox1').val() };
-
+                var param = { Par: $('#<%=TextBox1.ClientID%>').val() };
                 $.ajax({
                     type: "POST",
                     url: "AutoCompleteOrt.aspx/CompleteText",
                     contentType: "application/json;charset=utf-8",
                     data: JSON.stringify(param),
-                    success: function (result) {
-                        response($.map(result.d), function (item) {
-                            return { value: item.Plz + ":" + item.Ort }
-                        })
+                    dataType: "json",
+
+                    success: function (data) {
+                        response($.map(data.d, function (item) {
+                            return {value: item.Plz + ":" + item.Ort}
+                        }))
 
                     },
+
+                   
                     error: function (request, status, err) {
                         alert(request.responseText);
                     }
                 })
             },
             minLength: 2
-
         });
     </script>
 </asp:Content>
