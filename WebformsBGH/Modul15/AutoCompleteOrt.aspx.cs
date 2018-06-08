@@ -33,8 +33,8 @@ namespace WebformsBGH.Modul15
             }
             var q = from o in Liste
                     where o.Ort.Contains(Par)
-                    select x;
-            return q;
+                    select o;
+            return q.ToList();
 
         }
     }
