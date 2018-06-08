@@ -16,6 +16,12 @@ namespace WebformsBGH.Modul14
 
         }
 
+        public static string refreshme(HttpContext context)
+        {
+            return DateTime.Now.Ticks.ToString();
+
+        }
+
         public IEnumerable<WebformsBGH.Modul05.PlzOrt> Repeater1_GetData()
         {
             var Liste = new List<PlzOrt>();
@@ -38,7 +44,7 @@ namespace WebformsBGH.Modul14
                         select o;
                 return q.ToList();
             }
-            return Liste;
+            return Liste.Take(30).ToList();
         }
     }
 }

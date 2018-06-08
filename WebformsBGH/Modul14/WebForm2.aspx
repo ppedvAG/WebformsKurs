@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Modul07/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="WebformsBGH.Modul14.WebForm2" %>
-
+<%@ OutputCache Duration="30" VaryByParam="suche"  %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -15,6 +15,7 @@
             </ItemTemplate>
         </asp:Repeater>
     </table>
+    <asp:Substitution ID="Substitution1" runat="server" MethodName="refreshme" />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">
 </asp:Content>
