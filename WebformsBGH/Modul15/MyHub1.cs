@@ -15,7 +15,7 @@ namespace WebformsBGH.Modul15
         }
         public void SendMsg(string msg)
         {
-            Clients.All.UpdateListe();
+            Clients.All.UpdateListe(DateTime.Now.ToShortTimeString()+":"+msg);
 
         }
     }
