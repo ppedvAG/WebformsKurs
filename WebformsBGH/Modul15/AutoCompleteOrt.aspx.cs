@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.IO;
 using WebformsBGH.Modul05;
+using System.Web.Services;
 
 namespace WebformsBGH.Modul15
 {
