@@ -241,6 +241,7 @@
     <Content Include="Modul12\WebForm1.aspx" />
     <Content Include="Modul12\WebForm2.aspx" />
     <Content Include="Modul12\Zeit.aspx" />
+    <Content Include="Modul14\minify.aspx" />
     <Content Include="Modul14\WebForm1.aspx" />
     <Content Include="Modul14\WebForm2.aspx" />
     <Content Include="Modul15\AutoCompleteOrt.aspx" />
@@ -663,6 +664,13 @@
     </Compile>
     <Compile Include="Modul12\Zeit.aspx.designer.cs">
       <DependentUpon>Zeit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modul14\minify.aspx.cs">
+      <DependentUpon>minify.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modul14\minify.aspx.designer.cs">
+      <DependentUpon>minify.aspx</DependentUpon>
     </Compile>
     <Compile Include="Modul14\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

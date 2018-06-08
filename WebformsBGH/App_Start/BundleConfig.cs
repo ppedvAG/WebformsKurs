@@ -33,6 +33,12 @@ namespace WebformsBGH
             // bereit für die Produktion, verwenden Sie das Buildtool unter https://modernizr.com, um nur die benötigten Tests auszuwählen.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                             "~/Scripts/modernizr-*"));
+
+            bundles.Add(new ScriptBundle("~/bundles/ppedv").Include(
+                   "~/Scripts/jquery-3.3.1.js",
+                   "~/Scripts/jquery-ui.js",
+                   "~/Scripts/boostrap.js",
+                   "~/Scripts/moment-with-locales.js"));
         }
     }
 }
